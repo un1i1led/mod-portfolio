@@ -1,8 +1,11 @@
 import pic from '../assets/pic.jpg';
 import linkedin from '../assets/icons8-linkedin.svg';
 import githubWhite from '../assets/github-mark-white.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate();
+
     return (
         <div className='home-main'>
             <div className='home-top'>
@@ -12,7 +15,7 @@ const Home = () => {
                 <div className='center'>
                     <p>I'm a full-stack web developer from Mexico. I primarily use React.js, Node.js and Typescript to create dynamic websites</p>
                 </div>
-                <button className='blue-btn'>More About Me</button>
+                <button className='blue-btn' onClick={() => { navigate('/about')}}>More About Me</button>
             </div>
             <div className='home-bot'>
                 <div className='home-bot-imgs'>
