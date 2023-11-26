@@ -1,7 +1,14 @@
 import moonImg from '../assets/moon.svg';
 import sunImg from '../assets/sun.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
+    const navigate = useNavigate();
+
+    const goPage = (page: string) => {
+        navigate(page);
+    }
+
     return (
         <div className='nav-main'>
             <div className='nav-left'>
@@ -9,10 +16,10 @@ const Nav = () => {
             </div>
             <div className='nav-mid'>
                 <ul>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/about'>About</a></li>
-                    <li><a href='/projects'>Projects</a></li>
-                    <li><a href='/contact'>Contact</a></li>
+                    <li onClick={() => goPage('/')}>Home</li>
+                    <li onClick={() => goPage('/about')}>About</li>
+                    <li onClick={() => goPage('/projects')}>Projects</li>
+                    <li onClick={() => goPage('/contact')}>Contact</li>
                 </ul>
             </div>
             <div className='nav-right'>
