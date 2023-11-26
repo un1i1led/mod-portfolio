@@ -17,12 +17,12 @@ function App() {
           <Route path='/about' element={<About/>}/>
         </Routes>
         <div className='footer'>
-                <div className='footer-imgs'>
-                    <img src={githubWhite} alt='github link'/>
-                    <img src={linkedin} alt='linkedin link'/>
-                </div>
-                <p>© 2023 • Gilberto Sanchez. All Rights Reserved.</p>
+            <div className='footer-imgs'>
+                <img src={githubWhite} alt='github link'/>
+                <img src={linkedin} alt='linkedin link'/>
             </div>
+            <p>© 2023 • Gilberto Sanchez. All Rights Reserved.</p>
+        </div>
       </div>
     </Router>
   )
