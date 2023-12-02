@@ -13,7 +13,7 @@ const Home = () => {
                 <div className='center'>
                     <p>I'm a full-stack web developer from Mexico. I primarily use React.js, Node.js and Typescript to create dynamic websites</p>
                 </div>
-                <button className='blue-btn' onClick={() => { navigate('/about')}}>More About Me</button>
+                <button className='blue-btn' onClick={() => { navigate('/mod-portfolio/about')}}>More About Me</button>
             </div>
         </div>
     )
