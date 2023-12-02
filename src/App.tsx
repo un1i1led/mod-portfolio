@@ -15,10 +15,10 @@ function App() {
       <div className='App'>
         <Nav/>
         <Routes>
-          <Route path='/mod-portfolio' element={<Home/>}/>
-          <Route path='/mod-portfolio/about' element={<About/>}/>
-          <Route path='/mod-portfolio/projects' element={<Projects/>}/>
-          <Route path='/mod-portfolio/contact' element={<Contact/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
         <div className='footer'>
             <div className='footer-imgs'>
