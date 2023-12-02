@@ -1,5 +1,3 @@
-import moonImg from '../assets/moon.svg';
-import sunImg from '../assets/sun.svg';
 import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
@@ -22,9 +20,7 @@ const Nav = () => {
                     <li onClick={() => goPage('/contact')}>Contact</li>
                 </ul>
             </div>
-            <div className='nav-right'>
-                <img src={sunImg} alt='toggle dark mode' className='small-icon'/>
-            </div>
+            <div className='nav-right'></div>
         </div>
     )
 }
