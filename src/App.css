@@ -171,6 +171,10 @@ button {
   cursor: pointer;
 }
 
+.footer-imgs a:first-of-type {
+  filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(70deg) brightness(108%) contrast(108%);
+}
+
 .footer-imgs img:last-of-type {
   filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(233deg) brightness(109%) contrast(108%);
 }
@@ -181,13 +185,64 @@ button {
   font-size: 1.1em;
 }
 
-.about-main {
+.about-main,
+.project-main {
   display: flex;
   justify-content: center;
 }
 
-.about {
+.about,
+.project {
   max-width: 45rem;
+}
+
+/* Projects */
+
+.header-div {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.509);
+  margin-bottom: 2em;
+}
+
+.project-img {
+  width: 250px;
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
+.card-bot {
+  display: flex;
+  gap: 15px;
+}
+
+.card-bot a {
+  font-size: 1.1em;
+  color: var(--electric-blue);
+}
+
+/* Contact */
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-main img {
+  height: 150px;
+  filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(233deg) brightness(109%) contrast(108%);
+}
+
+.contact-main h1 {
+  margin-top: 2em;
+}
+
+.contact-main p {
+  font-size: 1.1em;
+  color: var(--electric-blue);
+  cursor: pointer;
 }
 
 /* Media queries */
