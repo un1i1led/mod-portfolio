@@ -1,7 +1,7 @@
 import './App.css'
 import githubWhite from './assets/github-mark-white.svg';
 import linkedin from './assets/icons8-linkedin.svg';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
